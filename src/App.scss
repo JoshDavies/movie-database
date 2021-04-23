@@ -1,10 +1,8 @@
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-size: 1rem;
-  color: #EFEFEF;
-  background-color: #131F33;
+  color: #212529;
+  background-color: #EFEFEF !important;
 }
 
 h1 {
@@ -40,8 +38,6 @@ a {
 }
 
 .navBar {
-  position: fixed;
-  z-index: 1000;
   top: 0;
   left: 0;
   min-height: 64px;
@@ -51,6 +47,8 @@ a {
   justify-content: center;
   background-color: #0b121f;
   box-shadow: 0 4px 10px #ccccc33f;
+  margin-bottom: 2rem;
+  color: #EFEFEF;
   .App-logo {
     height: 6rem;
     margin: 1rem;
@@ -70,4 +68,8 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer {
+  margin: 1rem;
 }
