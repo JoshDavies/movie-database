@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.scss';
+import React from 'react';
+import logo from 'logo.svg'; 
 
-function App() {
+const DefaultPageLayout = () => {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div id='defaultPageLayout'>
+        <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -15,11 +15,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Testing 123
         </a>
       </header>
     </div>
-  );
-}
+  )
+};
 
-export default App;
+export default DefaultPageLayout;
