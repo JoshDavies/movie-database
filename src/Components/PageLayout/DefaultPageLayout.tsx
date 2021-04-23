@@ -1,10 +1,17 @@
 import React from 'react';
-import Header from './Header'
+import Header from './Header';
+import Footer from './Footer';
 
-const DefaultPageLayout = () => {
+type propTypes = {
+  children: React.ReactChild | React.ReactChild[];
+}
+
+const DefaultPageLayout = ({children}: propTypes) => {
   return (
     <div id='defaultPageLayout'>
-        <Header />
+      <Header />
+      {children}
+      <Footer />
     </div>
   )
 };
