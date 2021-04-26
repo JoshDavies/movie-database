@@ -49,9 +49,11 @@ h6 {
 
 a {
   color:#809fff;
+  @include theme-aware('color', 'color-link');
   cursor: pointer;
   &:hover {
     color:#678cff;
+    @include theme-aware('color', 'color-link-hover');
   }
 }
 
@@ -63,10 +65,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0b121f;
   box-shadow: 0 4px 10px #0d0d0d;
   margin-bottom: 2rem;
-  color: #EFEFEF;
+  @include theme-aware('background-color', 'color-container');
   .App-logo {
     height: 6rem;
     margin: 1rem;
