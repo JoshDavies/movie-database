@@ -48,11 +48,9 @@ h6 {
 }
 
 a {
-  color:#809fff;
   @include theme-aware('color', 'color-link');
   cursor: pointer;
   &:hover {
-    color:#678cff;
     @include theme-aware('color', 'color-link-hover');
   }
 }
