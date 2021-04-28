@@ -1,0 +1,19 @@
+$_Primary: #FFE082;
+$_Secondary: #DCE775;
+
+$_GreyScale1: #263238;
+$_GreyScale2: #455A64;
+$_GreyScale3: #607D8B; 
+$_GreyScale4: #90A4AE; 
+$_GreyScale5: #CFD8DC;
+$_GreyScale6: #ECEFF1;
+
+$darkTheme:(
+    dark:(
+        color-background: $_GreyScale1,
+        color-text: $_GreyScale6,
+        color-container: $_GreyScale2,
+        color-link: $_Primary,
+        color-link-hover: $_Secondary,
+    )
+);

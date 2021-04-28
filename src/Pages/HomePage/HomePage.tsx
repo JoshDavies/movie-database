@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomePage.scss';
-import Button from 'Components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HomePage = () => {

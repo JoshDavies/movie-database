@@ -1,0 +1,26 @@
+@import 'src/Themes/light-theme';
+@import 'src/Themes/dark-theme';
+
+$themes: map-merge($lightTheme, $darkTheme);
+
+@mixin theme-aware($key, $color) {
+    @each $theme-name, $theme-color in $themes {
+        .theme-#{$theme-name} & {
+            #{$key}: getColor($theme-name, $color)
+        }
+    }
+}
+
+@function getColor($theme-name, $color) {
+    @if map-has-key($themes, $theme-name) {
+        $theme-name: map-get($themes, $theme-name);
+        @if map-has-key($theme-name, $color) {
+            $color: map-get($theme-name, $color);
+            @return $color;
+        }
+        @warn "unknown color `#{$color}` in theme-name";
+        @return null;        
+    }
+    @warn "unknown theme-name `#{$theme-name}` in themes";
+    @return null;
+}
