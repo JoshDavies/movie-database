@@ -5,22 +5,24 @@ import HomePage from 'Pages/HomePage/HomePage';
 
 function App() {
 
-  const handleColorTheme = (): void => {  
-    const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
-    const localStorageTheme = localStorage.getItem("theme");
-    if (localStorageTheme) {
-      localStorageTheme === "dark" ? setColorTheme('dark') : setColorTheme('light');
-    } else {
-      (prefersColorScheme.matches) ? setColorTheme('dark') : setColorTheme('light');
-    }
-  }
+  useEffect( () => {
+    const handleColorTheme = (): void => {  
+      const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      const localStorageTheme = localStorage.getItem("theme");
+      if (localStorageTheme) {
+        localStorageTheme === "dark" ? setColorTheme('dark') : setColorTheme('light');
+      } else {
+        (prefersColorScheme.matches) ? setColorTheme('dark') : setColorTheme('light');
+      }
+    };
 
-  const setColorTheme = (theme: string): void => {
-    document.documentElement.className = '';
-    document.documentElement.classList.add(`theme-${theme}`);
-  }
+    const setColorTheme = (theme: string): void => {
+      document.documentElement.className = '';
+      document.documentElement.classList.add(`theme-${theme}`);
+    };
 
-  {useEffect( () => handleColorTheme(), [] )}
+    handleColorTheme();
+  }, [] );
 
   return (
     <div className="App">
