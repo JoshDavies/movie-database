@@ -25,10 +25,13 @@ const Header = () => {
         id={'toggleThemeButton'}
         type={'button'}
         onClick={()=> {toggleTheme()}}
-        text={'Change theme'}
+        children={
+          <span>
+            Change Theme <FontAwesomeIcon icon={'sun'} /> <FontAwesomeIcon icon={'moon'} />
+          </span>
+        }
       />
-      <FontAwesomeIcon icon={'sun'} />
-      <FontAwesomeIcon icon={'moon'} />
+      
     </header>
   )
 };
