@@ -8,81 +8,83 @@ body {
   &.theme-dark img {
     filter: brightness(.9) contrast(1.2);
   }
-}
 
-.container {
-  margin-bottom: 2rem;
-  box-shadow: 0px 2px 6px #0d0d0d;
-  border-radius: 4px;
-  @include theme-aware(background-color, color-container);
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.25rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1.125rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-a {
-  @include theme-aware('color', 'color-link');
-  cursor: pointer;
-  &:hover {
-    @include theme-aware('color', 'color-link-hover');
+  .container {
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 6px #0d0d0d;
+    border-radius: 4px;
+    @include theme-aware(background-color, color-container);
   }
-}
 
-.navBar {
-  top: 0;
-  left: 0;
-  min-height: 64px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px #0d0d0d;
-  margin-bottom: 2rem;
-  @include theme-aware('background-color', 'color-container');
-  .App-logo {
-    height: 6rem;
-    margin: 1rem;
+  h1 {
+    font-size: 4rem;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 4px 4px 4px rgba(99, 200, 218, 0.336);
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h2 {
+    font-size: 2.25rem;
   }
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h3 {
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-.footer {
-  margin: 1rem;
-  padding: 1rem;
-  text-align: center;
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  a {
+    @include theme-aware('color', 'color-link');
+    cursor: pointer;
+    &:hover {
+      @include theme-aware('color', 'color-link-hover');
+    }
+  }
+
+  .navBar {
+    top: 0;
+    left: 0;
+    min-height: 64px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px #0d0d0d;
+    margin-bottom: 2rem;
+    @include theme-aware('background-color', 'color-container');
+    .App-logo {
+      height: 6rem;
+      margin: 1rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
 }
