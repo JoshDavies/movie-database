@@ -1,0 +1,32 @@
+@import 'src/themes/theme-builder';
+
+.primaryButton {
+    min-width: 4rem;
+	margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: skyblue;
+	background-color: skyblue;
+	color: black;
+	&:hover {
+		background-color: lightblue;
+        border-color: lightblue;
+		cursor: pointer;
+	}
+	&:focus {
+		outline: 0;
+		box-shadow: 0px 0px 0px 2px midnightblue;
+	}
+	&:active {
+		-webkit-box-shadow: inset 0px 0px 0.4rem skyblue;
+		-moz-box-shadow: inset 0px 0px 0.4rem skyblue;
+		box-shadow: inset 0px 0px 0.4rem skyblue;
+	}
+	&:disabled {
+		background-color: gray;
+        border-color: gray;
+		cursor: not-allowed;
+	}
+}

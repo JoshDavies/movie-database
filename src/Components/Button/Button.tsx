@@ -1,12 +1,13 @@
 import React from 'react';
+import './Button.scss';
 
 type propTypes = {
     id: string,
     className?: string,
     type?: 'button' | 'submit' | 'reset',
-    disabled?: boolean,
-    onClick?: () => void,
-    text: string,
+    isDisabled?: boolean,
+    onClick: () => void,
+    children: React.ReactNode,
 }
   
 const Button = ({
@@ -14,8 +15,8 @@ const Button = ({
     className = 'primaryButton', 
     type = 'submit',
     onClick, 
-    disabled = false, 
-    text
+    isDisabled = false, 
+    children
 }: propTypes) => {
     return (
         <button 
@@ -23,9 +24,9 @@ const Button = ({
             className={className}
             type={type}
             onClick={onClick}
-            disabled={disabled}
+            disabled={isDisabled}
         >
-            {text}
+            {children}
         </button>
     )
 };
