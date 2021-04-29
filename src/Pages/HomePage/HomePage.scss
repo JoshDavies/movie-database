@@ -3,9 +3,16 @@
     .container {
         min-height: 30vh;
         padding: 2rem;
+        .subSection {
+            margin-bottom: 2rem;
+            &:last-child {
+                margin-bottom: 0rem;
+            }
+        }
     }
 
     h2 {
         margin-bottom: 1rem;
     }
+    
 }

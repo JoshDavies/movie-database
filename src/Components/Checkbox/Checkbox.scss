@@ -1,0 +1,42 @@
+@import 'src/themes/theme-builder';
+
+.checkboxComponent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    .checkbox { 
+        align-items: center;
+        display: inline-flex;
+        background-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgrey;
+        padding: 2px;
+        height: 1.2rem;
+        width: 1.2rem;
+        border-radius: .2rem;
+        &:focus {
+            outline: 0;
+            -webkit-box-shadow: 0px 0px 0px 2px orange;
+            -moz-box-shadow: 0px 0px 0px 2px orange;
+            box-shadow: 0px 0px 0px 2px orange;
+        }
+        .check {
+            font-size: 0.9rem;
+            color: darkblue; 
+        }
+        .altCheckColor {
+            color: darkcyan; 
+        }
+        &:disabled {
+            background-color: lightgrey;
+            .check {
+                color: darkgray; 
+            }
+        }
+    }
+    .checkboxLabel {
+        cursor: pointer;
+        padding-left: 1rem;
+    }
+}
