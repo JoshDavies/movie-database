@@ -5,11 +5,12 @@ import {
     faHome,
     faSun,
     faMoon,
-    faPalette,
+    faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
     faCircle as faCircleRegular,
+    faSquare as faSquareRegular,
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
@@ -21,7 +22,8 @@ library.add(
     faHome,
     faSun,
     faMoon,
-    faPalette,
     faCircleRegular,
+    faSquareRegular,
+    faCheck,
     faGithubSquare,
 );
