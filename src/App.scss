@@ -1,13 +1,18 @@
 @import 'src/themes/theme-builder';
 
+.theme-dark body, .theme-light body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500 ;
+}
+.theme-dark img {
+    filter: brightness(.9) contrast(1.2);
+}
+
 body {
   font-style: normal;
   font-size: 1rem;
   @include theme-aware('color', 'color-text');
   @include theme-aware('background-color', 'color-background');
-  &.theme-dark img {
-    filter: brightness(.9) contrast(1.2);
-  }
 
   .container {
     margin-bottom: 2rem;
