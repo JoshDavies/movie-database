@@ -2,7 +2,8 @@ $_Primary: #BB86FC;
 $_PrimaryDark: darken($_Primary, 10%);;
 $_Secondary: #03DAC6;
 $_SecondaryDark: #03c1af;
-$Error: #CF6679;
+$_Error: #CF6679;
+$_BoxShadow: 0px 3px 8px #0d0d0d;
 
 $_GreyScale1: #121212;
 $_GreyScale2: #23282c;
@@ -17,6 +18,7 @@ $darkTheme:(
     dark:(
         background: $_GreyScale1,
         container: $_GreyScale2,
+        container-shadow: $_BoxShadow,
 
         text: $_GreyScale8,
 
