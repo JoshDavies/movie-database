@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/theme-builder/static/css/main.5989ab9b.chunk.css",
-    "main.js": "/theme-builder/static/js/main.40c2efd2.chunk.js",
-    "main.js.map": "/theme-builder/static/js/main.40c2efd2.chunk.js.map",
+    "main.css": "/theme-builder/static/css/main.f21bcb3b.chunk.css",
+    "main.js": "/theme-builder/static/js/main.9f0dbd4d.chunk.js",
+    "main.js.map": "/theme-builder/static/js/main.9f0dbd4d.chunk.js.map",
     "runtime-main.js": "/theme-builder/static/js/runtime-main.400a10f0.js",
     "runtime-main.js.map": "/theme-builder/static/js/runtime-main.400a10f0.js.map",
     "static/css/2.65af8127.chunk.css": "/theme-builder/static/css/2.65af8127.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.dc04c557.chunk.js.map": "/theme-builder/static/js/3.dc04c557.chunk.js.map",
     "index.html": "/theme-builder/index.html",
     "static/css/2.65af8127.chunk.css.map": "/theme-builder/static/css/2.65af8127.chunk.css.map",
-    "static/css/main.5989ab9b.chunk.css.map": "/theme-builder/static/css/main.5989ab9b.chunk.css.map",
+    "static/css/main.f21bcb3b.chunk.css.map": "/theme-builder/static/css/main.f21bcb3b.chunk.css.map",
     "static/js/2.32ad288e.chunk.js.LICENSE.txt": "/theme-builder/static/js/2.32ad288e.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/theme-builder/static/media/logo.6ce24c58.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.400a10f0.js",
     "static/css/2.65af8127.chunk.css",
     "static/js/2.32ad288e.chunk.js",
-    "static/css/main.5989ab9b.chunk.css",
-    "static/js/main.40c2efd2.chunk.js"
+    "static/css/main.f21bcb3b.chunk.css",
+    "static/js/main.9f0dbd4d.chunk.js"
   ]
 }
