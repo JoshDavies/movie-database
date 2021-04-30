@@ -2,10 +2,9 @@
 
 This project was initialised with [Create React App](https://github.com/facebook/create-react-app) with SCSS, TypeScript added. 
 Although, this Project is intended as a small project, The React folder structure is setup to be scalable for larger projects, including an icon library and bootstrap.
-
+   
+## Project Objectives:   
 The main goal of this project is to learn more complex scss and use it to deliver a front end with multiple color themes.    
-  
-Project Requirements:  
   
 Maintainable - The color themes are encapsulated in their own files, with different levels of abstraction; a color can be replaced in the theme or a certain use case for that color can be swapped, all independently of other themes. This was an important criteria for me as light and dark modes are not simply mirror opposites.  
   
