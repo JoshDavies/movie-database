@@ -1,6 +1,6 @@
 # Theme Builder
 
-A Font End App with multiple color themes. This project is a React App with SCSS and TypeScript. Although, this Project is intended as a small project, The folder structure is setup to be scalable for larger projects, including an icon library and bootstrap.  
+A Font End App with multiple color themes. This project is a React App with SCSS and TypeScript. Although, this Project is intended as a small project, the folder structure is setup to be scalable for larger projects, including an icon library and bootstrap.  
   
 Deployed to GitHub pages: [Visit live Webpage](https://joshdavies.github.io/theme-builder/)  *please note, this is currently a work in progress.*    
    
@@ -11,7 +11,7 @@ Maintainable - The color themes are encapsulated in their own files, with differ
   
 Dry - The code repeats itself as little as possible, making it easy to amend styling without having to go through every styling file. Whilst it’s not a massive challenge for small projects it does create a legacy challenge as projects grow so it’s best to implement a solution from the beginning.  
   
-Scalable - There are currently 2 themes (light & dark) but the project allows for additional themes to be added (at a later date) without having to restructure the existing code. This is useful for when re-branding or having multiple brands.  
+Scalable - There are currently 2 MVP themes (light & dark) but the project allows for additional themes to be added (at a later date) without having to restructure the existing code. This is useful when re-branding or having to support multiple brands.  
   
 Dynamic - The App will match the users preferred OS color scheme. However, it is possible to overwrite this with a click of a button. Changing the color scheme saves the users preference to local storage. This also ensures that the color scheme persists after a page refresh.  
   
