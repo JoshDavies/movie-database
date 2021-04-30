@@ -14,7 +14,7 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
-    faGithubSquare,
+    faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
@@ -25,5 +25,5 @@ library.add(
     faCircleRegular,
     faSquareRegular,
     faCheck,
-    faGithubSquare,
+    faGithub,
 );
