@@ -1,19 +1,45 @@
-$_Primary: #512DA8;
-$_Secondary: #AFB42B;
+$_Primary: #5c5470;
+$_PrimaryDark: #352f44;
+$_Secondary: #5481c7;
+$_SecondaryDark: #2e528b;
+$Error: #B00020;
 
-$_GreyScale1: #ECEFF1;
-$_GreyScale2: #CFD8DC;
-$_GreyScale3: #90A4AE; 
-$_GreyScale4: #607D8B; 
-$_GreyScale5: #455A64;
-$_GreyScale6: #263238;
+$_GreyScale1: #f5f4f7;
+$_GreyScale2: darken($_GreyScale1, 10%);
+$_GreyScale3: darken($_GreyScale1, 20%);
+$_GreyScale4: darken($_GreyScale1, 30%);
+$_GreyScale5: darken($_GreyScale1, 50%);
+$_GreyScale6: darken($_GreyScale1, 80%);
 
 $lightTheme: (
     light: (
-        color-background: $_GreyScale2,
-        color-text: $_GreyScale6,
-        color-container: $_GreyScale1,
-        color-link: $_Primary,
-        color-link-hover: $_Secondary,
+        background: $_GreyScale3,
+        container: $_GreyScale1,
+
+        text: $_GreyScale6,
+
+        link: $_Secondary,
+        link-hover: $_SecondaryDark,
+
+        button-primary-text: $_GreyScale1,
+        button-primary-background: $_Primary,
+        button-primary-border: $_Primary,
+
+        button-primary-text-focus: $_GreyScale1,    
+        button-primary-background-focus: $_PrimaryDark,
+        button-primary-border-focus: $_Primary,
+
+        button-secondary-text: $_Secondary,
+        button-secondary-background: $_GreyScale1,
+        button-secondary-border: $_Secondary,
+
+        button-secondary-text-focus: $_SecondaryDark,
+        button-secondary-background-focus: $_GreyScale1,
+        button-secondary-border-focus: $_SecondaryDark,
+
+        button-disabled-text: $_GreyScale6,
+        button-disabled-background: $_GreyScale3,
+        button-disabled-border: $_GreyScale3,
+    
     )
 );

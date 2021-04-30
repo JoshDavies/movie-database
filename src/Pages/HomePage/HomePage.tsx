@@ -9,7 +9,9 @@ const HomePage = () => {
     <div id='HomePage'>
       <div className='container' >
         <h2><FontAwesomeIcon icon={'home'} /> Home Page</h2>
-        <p> Welcome to the Home Page.</p>
+        <div className='subSection'>
+          <p> Welcome to the Home Page.</p>
+        </div>
         <ButtonComponents />
         <CheckboxComponents />
       </div>

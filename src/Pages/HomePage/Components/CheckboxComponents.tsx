@@ -5,7 +5,8 @@ const CheckboxComponents = () => {
   return (
     <div className='subSection' id='CheckboxComponents'>
       <h3>Checkbox Component</h3>
-      <p><i>fyi: The state of the checkboxes has been hardcoded.</i></p>
+      <div className='subSection'>
+      <p><i>fyi: The state of the checkboxes have been hardcoded.</i></p>
       <Checkbox 
         id ={'Unchecked'}
         isSelected={false}
@@ -39,6 +40,7 @@ const CheckboxComponents = () => {
         labelText={'Checked disabled'}
         isDisabled={true}
       />
+    </div>
     </div>
   )
 };

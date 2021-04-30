@@ -12,13 +12,6 @@ const ButtonComponents = () => {
         children={'Primary Button'}
       />
       <Button 
-        id={'demoPrimaryButtonDisabled'}
-        type={'button'}
-        onClick={()=> null}
-        children={'Primary Button'}
-        isDisabled={true}
-      />
-      <Button 
         id={'demoSecondaryButton'}
         type={'button'}
         onClick={()=> null}
@@ -26,11 +19,10 @@ const ButtonComponents = () => {
         className={'secondaryButton'}
       />
       <Button 
-        id={'demoSecondaryButtonDisabled'}
+        id={'demoButtonDisabled'}
         type={'button'}
         onClick={()=> null}
-        children={'Secondary Button'}
-        className={'secondaryButton'}
+        children={'Disabled Button'}
         isDisabled={true}
       />
     </div>

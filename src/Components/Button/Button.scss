@@ -12,47 +12,50 @@
 	}
 	&:focus {
 		outline: 0;
-		box-shadow: 0px 0px 0px 2px orange;
+	}
+	&:active {
+		-webkit-box-shadow: inset 0px 0px 0.5rem #e0e0e0;
+		-moz-box-shadow: inset 0px 0px 0.5rem #e0e0e0;
+		box-shadow: inset 0px 0px 0.5rem #e0e0e0;
 	}
 	&:disabled {
 		cursor: not-allowed;
+		opacity: 0.5;
 	}
 }
 
 .primaryButton {
-    border-color: skyblue;
-	background-color: skyblue;
-	color: black;
-	&:hover {
-		background-color: lightblue;
-        border-color: lightblue;
-	}
-	&:active {
-		-webkit-box-shadow: inset 0px 0px 0.4rem skyblue;
-		-moz-box-shadow: inset 0px 0px 0.4rem skyblue;
-		box-shadow: inset 0px 0px 0.4rem skyblue;
+	@include theme-aware('border-color', 'button-primary-border');
+	@include theme-aware('background-color', 'button-primary-background');
+	@include theme-aware('color', 'button-primary-text');
+	&:hover, &:focus {
+		@include theme-aware('color', 'button-primary-text-focus');
+		@include theme-aware('border-color', 'button-primary-border-focus');
+		@include theme-aware('background-color', 'button-primary-background-focus');
 	}
 	&:disabled {
-		background-color: gray;
-        border-color: gray;
+		@include theme-aware('color', 'button-disabled-text');
+		@include theme-aware('border-color', 'button-disabled-border');
+		@include theme-aware('background-color', 'button-disabled-background');
 	}
 }
 
 .secondaryButton {
-    border-color: skyblue;
-	background-color: whitesmoke;
-	color: black;
+	@include theme-aware(border-color, 'button-secondary-border');
+	@include theme-aware(background-color, 'button-secondary-background');
+	@include theme-aware(color, 'button-secondary-text');
 	&:hover {
-		background-color: lightblue;
-        border-color: lightblue;
+		@include theme-aware('border-color', 'button-secondary-border-hover');
+		@include theme-aware('background-color', 'button-secondary-background-hover');
 	}
-	&:active {
-		-webkit-box-shadow: inset 0px 0px 0.4rem skyblue;
-		-moz-box-shadow: inset 0px 0px 0.4rem skyblue;
-		box-shadow: inset 0px 0px 0.4rem skyblue;
+	&:hover, &:focus {
+		@include theme-aware('color', 'button-secondary-text-focus');
+		@include theme-aware('border-color', 'button-secondary-border-focus');
+		@include theme-aware('background-color', 'button-secondary-background-focus');
 	}
 	&:disabled {
-		background-color: gray;
-        border-color: gray;
+		@include theme-aware('color', 'button-disabled-text');
+		@include theme-aware('border-color', 'button-disabled-border');
+		@include theme-aware('background-color', 'button-disabled-background');
 	}
 }
