@@ -19,7 +19,9 @@ Dynamic - The App will match the users preferred OS color scheme. However, it is
 ## Tech  
 - JS / TypeScript  
 - React  
-- SCSS  
+- SCSS + Bootstrap  
+- Google Fonts  
+- Font Awesome 5 icons    
 
 ----------------
 ## Quickstart
