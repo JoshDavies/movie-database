@@ -44,10 +44,6 @@
 	@include theme-aware(border-color, 'button-secondary-border');
 	@include theme-aware(background-color, 'button-secondary-background');
 	@include theme-aware(color, 'button-secondary-text');
-	&:hover {
-		@include theme-aware('border-color', 'button-secondary-border-hover');
-		@include theme-aware('background-color', 'button-secondary-background-hover');
-	}
 	&:hover, &:focus {
 		@include theme-aware('color', 'button-secondary-text-focus');
 		@include theme-aware('border-color', 'button-secondary-border-focus');
