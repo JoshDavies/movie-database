@@ -10,7 +10,7 @@ const HomePage = () => {
       <div className='container' >
         <h2><FontAwesomeIcon icon={'home'} /> Home Page</h2>
         <div className='subSection'>
-          <p> Welcome to the Home Page.</p>
+          <p>Click the button in the page header to toggle the color theme of this App!</p>
         </div>
         <ButtonComponents />
         <CheckboxComponents />

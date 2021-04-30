@@ -34,8 +34,7 @@ const Checkbox = ({
             <label 
                 htmlFor = {`checkbox-label-${id}`}
                 onClick = {toggleCheckbox} 
-                onKeyPress = {toggleCheckbox} 
-                className = 'checkboxLabel'
+                className = {'checkboxLabel ' + (isDisabled? 'disabledLabel' : '')}
             >
                 {labelText}
             </label>

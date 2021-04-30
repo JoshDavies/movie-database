@@ -42,5 +42,14 @@ $darkTheme:(
         button-disabled-text: $_GreyScale8,
         button-disabled-background: $_GreyScale4,
         button-disabled-border: $_GreyScale4,
+
+        checkbox-background: $_GreyScale2,
+        checkbox-border: $_GreyScale6,
+        checkbox-check: $_Primary,
+        checkbox-check-alt: $_Secondary,
+
+        checkbox-background-disabled: $_GreyScale4,
+        checkbox-border-disabled: $_GreyScale4,
+        checkbox-check-disabled: $_GreyScale6,
     )
 );

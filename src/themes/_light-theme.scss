@@ -40,6 +40,14 @@ $lightTheme: (
         button-disabled-text: $_GreyScale6,
         button-disabled-background: $_GreyScale3,
         button-disabled-border: $_GreyScale3,
-    
+
+        checkbox-background: $_GreyScale1,
+        checkbox-border: $_GreyScale4,
+        checkbox-check: $_Primary,
+        checkbox-check-alt: $_Secondary,
+
+        checkbox-background-disabled: $_GreyScale2,
+        checkbox-border-disabled: $_GreyScale4,
+        checkbox-check-disabled: $_GreyScale4,
     )
 );
