@@ -27,7 +27,6 @@
         }
         .altCheckColor {
             @include theme-aware('color', 'checkbox-check-alt');
-
         }
         &:disabled {
             opacity: 0.75;
