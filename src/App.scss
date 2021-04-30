@@ -18,7 +18,6 @@ body {
     border-radius: 0.25rem;
     @include theme-aware(background-color, 'container');
   }
-  //box-shadow: h-offset v-offset blur spread color
   h1 {
     font-size: 4rem;
     font-family: 'Lobster', sans-serif;
