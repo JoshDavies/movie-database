@@ -1,9 +1,9 @@
 # Theme Builder
 
-This project was initialised with [Create React App](https://github.com/facebook/create-react-app) with SCSS, TypeScript added.  
-Although, this is intended as a small project, I set up the React folder structure including an icon library and bootstrap to be scalable for larger projects.
+This project was initialised with [Create React App](https://github.com/facebook/create-react-app) with SCSS, TypeScript added. 
+Although, this Project is intended as a small project, The React folder structure is setup to be scalable for larger projects, including an icon library and bootstrap.
 
-The main goal of this project was to learn more complex scss and use it to code a front end with multiple color themes.    
+The main goal of this project is to learn more complex scss and use it to deliver a front end with multiple color themes.    
   
 Project Requirements:  
   
@@ -13,7 +13,7 @@ Dry - The code repeats itself as little as possible, making it easy to amend sty
   
 Scalable - There are currently 2 themes (light & dark) but the project allows for additional themes to be added (at a later date) without having to restructure the existing code. This is useful for when re-branding or having multiple brands.  
   
-The App will also match the users preferred OS color scheme. However, its possible to overwrite this by changing the color scheme; which saves the users preference to local storage. This also ensures that the color scheme persists after a page refresh.  
+Dynamic - The App will match the users preferred OS color scheme. However, it is possible to overwrite this with a click of a button. Changing the color scheme saves the users preference to local storage. This also ensures that the color scheme persists after a page refresh.  
   
 ----------------
 ## Tech  
