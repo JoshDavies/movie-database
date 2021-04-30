@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Header = () => (
+const Footer = () => (
   <footer className='footer container' id ='footer' role='contentinfo'>
     <p>Project by:{' '}
       <a
@@ -27,4 +27,4 @@ const Header = () => (
   </footer>
 );
 
-export default Header;
+export default Footer;
