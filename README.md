@@ -2,7 +2,7 @@
 
 A Font End App with multiple color themes. This project is a React App with SCSS and TypeScript. Although, this Project is intended as a small project, The folder structure is setup to be scalable for larger projects, including an icon library and bootstrap.  
   
-Deployed to GitHub pages [Visit live Webpage](https://joshdavies.github.io/theme-builder/)  *please note, this is currently a work in progress.*    
+Deployed to GitHub pages: [Visit live Webpage](https://joshdavies.github.io/theme-builder/)  *please note, this is currently a work in progress.*    
    
 ## Project Objectives:   
 The main goal of this project is to learn more complex scss and use it to deliver a front end with multiple color themes.    
