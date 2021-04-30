@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import logo from 'logo.svg'; 
 
 const Footer = () => (
   <footer className='footer container' id ='footer' role='contentinfo'>
@@ -25,6 +26,7 @@ const Footer = () => (
         Josh Davies
       </a>
     </p>
+    <img src={logo} className="App-logo" alt="logo" />
   </footer>
 );
 

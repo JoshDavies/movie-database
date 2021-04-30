@@ -55,20 +55,28 @@ body {
   }
 
   .navBar {
-    top: 0;
-    left: 0;
     min-height: 64px;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
     margin-bottom: 2rem;
     @include theme-aware(box-shadow, 'container-shadow');
     @include theme-aware(background-color, 'container');
-    .App-logo {
-      height: 6rem;
-      margin: 1rem;
+    button {
+      min-width: fit-content;
+      height: fit-content;
+      margin: auto;
     }
+    h1 {
+      margin: auto;
+      padding: 0rem 1rem;
+    }
+  }
+
+  .App-logo {
+    height: 4rem;
   }
 
   @media (prefers-reduced-motion: no-preference) {

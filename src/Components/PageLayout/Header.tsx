@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from 'logo.svg'; 
 import Button from 'Components/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -20,7 +19,6 @@ const Header = () => {
   return (
     <header className='navBar' id ='navBar' role='banner'>
       <h1>Theme Builder</h1>
-      <img src={logo} className="App-logo" alt="logo" />
       <Button 
         id={'toggleThemeButton'}
         type={'button'}
