@@ -96,8 +96,20 @@ body {
   .footer {
     padding: 1rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr) minmax(10rem, 2fr));
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
     svg { 
       margin: 1rem;
+    }
+    span {
+      min-width: 12rem;
+      :first-child {
+        margin-top: 1rem;
+      }
     }
   }
 

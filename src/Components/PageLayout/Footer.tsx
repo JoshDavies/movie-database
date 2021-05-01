@@ -5,6 +5,7 @@ import logo from 'logo.svg';
 const Footer = () => (
   <footer className='footer container' id ='footer' role='contentinfo'>
     <FontAwesomeIcon icon={['fab', 'github']} size='3x'/>
+    <span>
     <p>Project:{' '}
       <a
         className="repo-link"
@@ -26,6 +27,7 @@ const Footer = () => (
         Josh Davies
       </a>
     </p>
+    </span>
     <img src={logo} className="App-logo" alt="logo" />
   </footer>
 );
