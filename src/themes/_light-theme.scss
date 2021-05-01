@@ -1,5 +1,5 @@
-$_Primary: #5c5470;
-$_PrimaryDark: #352f44;
+$_Primary: #81c754;
+$_PrimaryDark: #276D00;
 $_Secondary: #5481c7;
 $_SecondaryDark: #2e528b;
 $_Error: #B00020;
@@ -23,13 +23,13 @@ $lightTheme: (
         link: $_Secondary,
         link-hover: $_SecondaryDark,
 
-        button-primary-text: $_GreyScale1,
+        button-primary-text: $_GreyScale6,
         button-primary-background: $_Primary,
         button-primary-border: $_Primary,
 
         button-primary-text-focus: $_GreyScale1,    
         button-primary-background-focus: $_PrimaryDark,
-        button-primary-border-focus: $_Primary,
+        button-primary-border-focus: $_PrimaryDark,
 
         button-secondary-text: $_Secondary,
         button-secondary-background: $_GreyScale1,
