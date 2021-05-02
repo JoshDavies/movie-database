@@ -57,7 +57,7 @@ Compiles into this CSS:
 ```
 Therefore, this approach becomes increasingly beneficial for App's with many color themes.  
   
-The main disadvantage is the additional effort it takes to set up both light & dark theme requirements have to be taken into consideration at the same time. This meant that the themes needed 15 variables for the button component alone. Potentially, this could become verbose for larger projects, but perhaps it would be possible for components to share variables once patterns start to emerge in the themes.  
+The main disadvantage is the additional effort it takes to set up and both light & dark theme requirements have to be taken into consideration at the same time. This means that the themes needed 15 variables for the button component alone. Potentially, this could become verbose for larger projects, but perhaps it would be possible for components to share variables once patterns start to emerge in the themes.  
   
 From this project I learnt to use SCSS to write DRY code and more about styling for dark themes. The next step for this project would be to add a state management tool and implement a test library. I could also or fetch from a public API to give the App some interesting content and give me a reason to expand the component library or add React-router for multiple pages.  
   
