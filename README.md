@@ -34,3 +34,24 @@ To Launch the app locally:
 > npm run build
 > npm start
 ```
+  
+-----------
+## Project Review
+  
+To give a brief description, this SCSS Mixin:  
+```SCSS
+.primaryButton {  
+	  @include theme-aware('border-color', 'button-primary-border');  
+}  
+```
+Compiles into:  
+```CSS
+.theme-light .primaryButton {  
+    border-color: #81c754;  
+}  
+.theme-dark .primaryButton {  
+    border-color: #BB86FC;  
+}  
+```
+  
+Therefore, this approach becomes increasingly beneficial for App's with many color themes.
