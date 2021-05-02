@@ -36,7 +36,9 @@ To Launch the app locally:
 ```
   
 -----------
-## Project Review
+## Project Review  
+
+Overall, I am pleased with this design pattern as it passes all the criteria I set above. Once setup, I found it easy to edit a theme’s color or application as it is controlled by a single file.   
   
 To give a brief description, this SCSS Mixin:  
 ```SCSS
@@ -44,7 +46,7 @@ To give a brief description, this SCSS Mixin:
 	  @include theme-aware('border-color', 'button-primary-border');  
 }  
 ```
-Compiles into:  
+Compiles into this CSS:  
 ```CSS
 .theme-light .primaryButton {  
     border-color: #81c754;  
@@ -53,5 +55,11 @@ Compiles into:
     border-color: #BB86FC;  
 }  
 ```
+Therefore, this approach becomes increasingly beneficial for App's with many color themes.  
   
-Therefore, this approach becomes increasingly beneficial for App's with many color themes.
+The main disadvantage is the additional effort it takes to set up both light & dark theme requirements have to be taken into consideration at the same time. This meant that the themes needed 15 variables for the button component alone. Potentially, this could become verbose for larger projects, but perhaps it would be possible for components to share variables once patterns start to emerge in the themes.  
+  
+From this project I learnt to use SCSS to write DRY code and more about styling for dark themes. The next step for this project would be to add a state management tool and implement a test library. I could also or fetch from a public API to give the App some interesting content and give me a reason to expand the component library or add React-router for multiple pages.  
+  
+However, I want to be able to try / experiment with different programs & API’s so I think the project is at a good stopping point where I am able to fork off it and take it in different directions.  
+
