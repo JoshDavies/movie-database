@@ -2,7 +2,7 @@
 
 A Font End React App with SCSS and TypeScript. 
   
-This project was cloned from my previous project: [Theme-builder](https://github.com/JoshDavies/theme-builder) in order to continue working on my project but to take it in a new direction and focus on adding content via an API.
+This project was cloned from my previous project: [Theme-builder](https://github.com/JoshDavies/theme-builder) in order to continue working on it but to take it in a new direction and shift focus on to adding content via an API.
    
 ## Project Objectives:   
 TBA

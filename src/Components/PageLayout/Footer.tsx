@@ -9,7 +9,7 @@ const Footer = () => (
     <p>Project:{' '}
       <a
         className="repo-link"
-        href="https://github.com/JoshDavies/theme-builder/tree/main"
+        href="https://github.com/JoshDavies/movie-database"
         target="_blank"
         rel="noopener noreferrer"
       >

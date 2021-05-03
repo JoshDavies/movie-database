@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header className='navBar' id ='navBar' role='banner'>
-      <h1>Theme Builder</h1>
+      <h1>Movie Database</h1>
       <Button 
         id={'toggleThemeButton'}
         type={'button'}
@@ -29,7 +29,6 @@ const Header = () => {
           </span>
         }
       />
-      
     </header>
   )
 };
