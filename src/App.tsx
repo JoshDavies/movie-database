@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { observer } from "mobx-react";
 import './App.scss';
 import DefaultPageLayout from './Components/PageLayout/DefaultPageLayout';
 import HomePage from 'Pages/HomePage/HomePage';
@@ -32,5 +33,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+export default observer(App);

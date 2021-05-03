@@ -1,4 +1,5 @@
 import React from 'react';
+import { observer } from "mobx-react";
 import Header from './Header';
 import Footer from './Footer';
 
@@ -16,4 +17,4 @@ const DefaultPageLayout = ({children}: propTypes) => {
   )
 };
 
-export default DefaultPageLayout;
+export default observer(DefaultPageLayout);

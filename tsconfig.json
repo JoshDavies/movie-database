@@ -7,6 +7,8 @@
       "esnext"
     ],
     "allowJs": true,
+    "useDefineForClassFields": true,
+    "experimentalDecorators": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,

@@ -1,8 +1,8 @@
 {
-  "name": "theme-builder",
+  "name": "movie-database",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joshdavies.github.io/theme-builder",
+  "homepage": "https://joshdavies.github.io/movie-database",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
@@ -17,6 +17,8 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "bootstrap": "^5.0.0-beta3",
+    "mobx": "^6.3.0",
+    "mobx-react": "^7.1.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -52,5 +54,18 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": false
+        }
+      ]
+    ],
+    "presets": [
+      "react-app"
+    ]
   }
 }
