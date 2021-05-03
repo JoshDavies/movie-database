@@ -1,10 +1,8 @@
 # Movie Database
 
-A Font End App.  
-This project is a React App with SCSS and TypeScript. 
+A Font End React App with SCSS and TypeScript. 
   
-This project was cloned from my previous project: [Theme-builder](https://github.com/JoshDavies/theme-builder)   
-This allows me to continue working on the app I set up but still have the option to experiment with different programs & API’s.
+This project was cloned from my previous project: [Theme-builder](https://github.com/JoshDavies/theme-builder) in order to continue working on my project but to take it in a new direction and focus on adding content via an API.
    
 ## Project Objectives:   
 TBA
