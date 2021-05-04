@@ -1,4 +1,5 @@
 import React from 'react';
+import { observer } from "mobx-react";
 import './Button.scss';
 
 type propTypes = {
@@ -31,4 +32,4 @@ const Button = ({
     )
 };
 
-export default Button;
+export default observer(Button);

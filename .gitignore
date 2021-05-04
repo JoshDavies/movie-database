@@ -25,3 +25,6 @@ yarn-error.log*
 .vscode/
 git/
 package-lock.json
+
+# api keys
+.env 

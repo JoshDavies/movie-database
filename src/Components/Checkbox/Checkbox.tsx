@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeAutoObservable } from "mobx";
 import { observer } from "mobx-react";
 import './Checkbox.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -44,4 +43,4 @@ const Checkbox = ({
     )
 };
 
-export default Checkbox;
+export default observer(Checkbox);
