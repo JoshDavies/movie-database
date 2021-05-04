@@ -3,6 +3,8 @@ import { observer } from "mobx-react";
 import './MovieCard.scss';
 import * as Types from 'Pages/HomePage/Types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 type propTypes = {
     index: number,
@@ -25,6 +27,13 @@ const MovieCard = ({
                     {movie.release_date}
                 </p>
                 <p>User Score: {movie.vote_average}</p>
+                <div className='userScore'>
+                    <CircularProgressbar 
+                        value={movie.vote_average} 
+                        maxValue={10} 
+                        text={`${movie.vote_average}`} 
+                    />
+                </div>
                 <p>Overview: {movie.overview}</p>
             </span>
         </div>
