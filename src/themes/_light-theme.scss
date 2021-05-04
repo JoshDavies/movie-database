@@ -3,14 +3,15 @@ $_PrimaryDark: #276D00;
 $_Secondary: #5481c7;
 $_SecondaryDark: #2e528b;
 $_Error: #B00020;
-$_BoxShadow: 0px 4px 6px #9792b8;
 
-$_GreyScale1: #f5f4f7;
+$_GreyScale1: #e2e7f1;
 $_GreyScale2: darken($_GreyScale1, 10%);
 $_GreyScale3: darken($_GreyScale1, 20%);
 $_GreyScale4: darken($_GreyScale1, 30%);
 $_GreyScale5: darken($_GreyScale1, 50%);
 $_GreyScale6: darken($_GreyScale1, 80%);
+
+$_BoxShadow: 0px 4px 6px $_GreyScale4;
 
 $lightTheme: (
     light: (
@@ -51,5 +52,7 @@ $lightTheme: (
         checkbox-background-disabled: $_GreyScale2,
         checkbox-border-disabled: $_GreyScale4,
         checkbox-check-disabled: $_GreyScale4,
+
+        card-background: $_GreyScale2,
     )
 );

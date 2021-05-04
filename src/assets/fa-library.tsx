@@ -6,6 +6,7 @@ import {
     faSun,
     faMoon,
     faCheck,
+    faFire,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -26,4 +27,5 @@ library.add(
     faSquareRegular,
     faCheck,
     faGithub,
+    faFire,
 );
