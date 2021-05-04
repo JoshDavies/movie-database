@@ -1,4 +1,5 @@
 import React from 'react';
+import { observer } from "mobx-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from 'logo.svg'; 
 
@@ -32,4 +33,4 @@ const Footer = () => (
   </footer>
 );
 
-export default Footer;
+export default observer(Footer);

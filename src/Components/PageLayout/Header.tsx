@@ -1,4 +1,5 @@
 import React from 'react';
+import { observer } from "mobx-react";
 import Button from 'Components/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -33,4 +34,4 @@ const Header = () => {
   )
 };
 
-export default Header;
+export default observer(Header);
