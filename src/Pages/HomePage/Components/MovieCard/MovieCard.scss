@@ -17,4 +17,7 @@
 		border-radius: 0.2rem;
 		@include theme-aware(box-shadow, 'container-shadow');
 	}
+	svg {
+		margin-right: 0.5rem;
+	}
 }

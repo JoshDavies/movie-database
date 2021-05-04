@@ -12,6 +12,8 @@ import {
 import {
     faCircle as faCircleRegular,
     faSquare as faSquareRegular,
+    faCalendarAlt as faCalendarAltRegular,
+
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
@@ -25,6 +27,7 @@ library.add(
     faMoon,
     faCircleRegular,
     faSquareRegular,
+    faCalendarAltRegular,
     faCheck,
     faGithub,
     faFire,
