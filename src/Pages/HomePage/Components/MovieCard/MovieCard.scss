@@ -24,4 +24,28 @@
 		width: 5rem;
 		height: 5rem;
 	}
+	.CircularProgressbar {
+		@include theme-aware(stroke, 'score-text');
+		.CircularProgressbar-path {
+			@include theme-aware(stroke, 'score-bar');
+		}
+		.CircularProgressbar-trail {
+			@include theme-aware(stroke, 'score-wheel');
+		}
+	}
+}
+
+.theme-dark {
+	.movieCard {
+		.CircularProgressbar {
+			filter: drop-shadow(0px 0px 1px #121212);
+		}
+	}
+}
+.theme-light {
+	.movieCard {
+		.CircularProgressbar {
+			filter: drop-shadow(0px 0px 1px #e2e7f1);
+		}
+	}
 }

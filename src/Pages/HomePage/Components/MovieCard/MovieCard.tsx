@@ -31,7 +31,8 @@ const MovieCard = ({
                     <CircularProgressbar 
                         value={movie.vote_average} 
                         maxValue={10} 
-                        text={`${movie.vote_average}`} 
+                        text={`${movie.vote_average}`}
+                        strokeWidth={16} 
                     />
                 </div>
                 <p>Overview: {movie.overview}</p>
