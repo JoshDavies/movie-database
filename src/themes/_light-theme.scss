@@ -12,6 +12,8 @@ $_GreyScale5: darken($_GreyScale1, 50%);
 $_GreyScale6: darken($_GreyScale1, 80%);
 
 $_BoxShadow: 0px 4px 6px $_GreyScale4;
+$_ScoreShadow: drop-shadow(0px 0px 1px $_GreyScale1);
+
 
 $lightTheme: (
     light: (
@@ -58,5 +60,6 @@ $lightTheme: (
         score-text: $_GreyScale6,
         score-bar: $_Primary,
         score-wheel: $_GreyScale1,
+        score-shadow: $_ScoreShadow,
     )
 );

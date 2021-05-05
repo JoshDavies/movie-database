@@ -26,8 +26,7 @@ const MovieCard = ({
                     <FontAwesomeIcon icon={['far', 'calendar-alt']} title='Release Date' aria-label='Release Date' />
                     {movie.release_date}
                 </p>
-                <p>User Score: {movie.vote_average}</p>
-                <div className='userScore'>
+                <div className='userScore' title='User Score'>
                     <CircularProgressbar 
                         value={movie.vote_average} 
                         maxValue={10} 
