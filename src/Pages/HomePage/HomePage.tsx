@@ -14,13 +14,14 @@ const HomePage = () => {
   return (
     <div id='HomePage'>
       <div className='container' >
-        <h2><FontAwesomeIcon icon={'fire'} /> Popular Movies on TMDB</h2>
-        <p>see the most popular films.</p>
-        {Store.popularMovies && Store.popularMovies.length &&
-          Store.popularMovies.map((movie, index) =>
-            <MovieCard index={index} movie={movie} />
-          )
-        }
+        <h2><FontAwesomeIcon icon={'fire'} /> Popular</h2>
+        <div className='movieCardList'>
+          {Store.popularMovies && Store.popularMovies.length &&
+            Store.popularMovies.map((movie, index) =>
+              <MovieCard index={index} movie={movie} />
+            )
+          }
+        </div>
       </div>
     </div>
   )

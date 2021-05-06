@@ -5,6 +5,7 @@ import * as Types from 'Pages/HomePage/Types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import Button from 'Components/Button/Button';
 
 type propTypes = {
     index: number,
@@ -16,26 +17,38 @@ const MovieCard = ({
     movie
 }: propTypes) => {
     return (
-        <div className='movieCard' key ={index + movie.title}>
-            <span>
-                <img src={`http://image.tmdb.org/t/p/w200/${movie.poster_path}`}></img>
-            </span>
-            <span>
+        <div className='movieCard' key={index + movie.title}>
+            <img src={`http://image.tmdb.org/t/p/w300/${movie.poster_path}`}></img>
+
+            <div className='movieInfo'>
                 <h3>{movie.title}</h3>
-                <p> 
-                    <FontAwesomeIcon icon={['far', 'calendar-alt']} title='Release Date' aria-label='Release Date' />
-                    {movie.release_date}
-                </p>
-                <div className='userScore' title='User Score'>
-                    <CircularProgressbar 
-                        value={movie.vote_average} 
-                        maxValue={10} 
-                        text={`${movie.vote_average}`}
-                        strokeWidth={16} 
+                <div className='scoreAndRelease'>
+                    <div className='userScore' title='User Score'>
+                        <CircularProgressbar 
+                            value={movie.vote_average} 
+                            maxValue={10} 
+                            text={`${movie.vote_average}`}
+                            strokeWidth={16} 
+                        />
+                    </div>
+                
+                    <Button 
+                        id={`overViewButton-${index}`}
+                        type={'button'}
+                        onClick={()=> null}
+                        children={
+                        <span>
+                            <FontAwesomeIcon icon={'info-circle'} /> Overview
+                        </span>
+                        }
                     />
+
+                    <p className='movieRelease'> 
+                        <FontAwesomeIcon icon={['far', 'calendar-alt']} title='Release Date' aria-label='Release Date' />
+                        {movie.release_date}
+                    </p>
                 </div>
-                <p>Overview: {movie.overview}</p>
-            </span>
+            </div>
         </div>
     )
 };

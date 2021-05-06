@@ -3,35 +3,61 @@
 .movieCard {
 	@include theme-aware('background-color', 'card-background');
 	@include theme-aware(box-shadow, 'container-shadow');
-	max-width: 40rem;
-	padding: 1rem;
-	border-radius: 0.2rem;
-	margin-bottom: 1rem;
-	display: grid;
-  	grid-template-columns: auto minmax(5rem, 1fr);
-	grid-column-gap: 1rem;
-	h3 {
-		text-align: center;
-	}
+	width: 300px;
+    margin: 1rem;
+	border-radius: 0.2rem 0.2rem 1rem 1rem;
+    margin-bottom: 1rem;
+	position: relative;
 	img {
-		border-radius: 0.2rem;
+		border-radius: 0.2rem 0.2rem 1rem 1rem;
 		@include theme-aware(box-shadow, 'container-shadow');
 	}
-	svg {
-		margin-right: 0.5rem;
-	}
-	.userScore {
-		width: 5rem;
-		height: 5rem;
-		@include theme-aware(filter, 'score-shadow');
-	}
-	.CircularProgressbar {
-		@include theme-aware(stroke, 'score-text');
-		.CircularProgressbar-path {
-			@include theme-aware(stroke, 'score-bar');
+	.movieInfo{
+		padding: 1rem;
+		text-align: center;
+		h3 {
+			text-align: center;
+			margin-top: .5rem;
+			margin-bottom: 11rem;
 		}
-		.CircularProgressbar-trail {
-			@include theme-aware(stroke, 'score-wheel');
+		.scoreAndRelease {
+			position: absolute;
+			bottom: 1.5rem;
+			width: 100%;
+			left: 0rem;
+			svg {
+				margin-right: 0.5rem;
+			}
 		}
-	}
+		.userScore {
+			width: 5rem;
+			height: 5rem;
+			margin-right: 0.5rem;
+			@include theme-aware(filter, 'score-shadow');
+		}
+		.CircularProgressbar {
+			@include theme-aware(stroke, 'score-text');
+			.CircularProgressbar-path {
+				@include theme-aware(stroke, 'score-bar');
+			}
+			.CircularProgressbar-trail {
+				@include theme-aware(stroke, 'score-wheel');
+			}
+		}
+		.movieRelease, .userScore {
+			display: inline-block;
+			font-size: 1.2rem;
+		} 
+		.movieRelease {
+			margin-top: 1rem;
+			margin-bottom: 0;
+			padding: 0.5rem 1rem;
+			width: inherit;
+			@include theme-aware(background-color, 'pill');
+			@include theme-aware(box-shadow, 'container-shadow');
+			svg {
+				@include theme-aware(color, 'icon');
+			}
+		}
+	}	
 }

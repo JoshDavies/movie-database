@@ -1,15 +1,15 @@
 $_Primary: #BB86FC;
-$_PrimaryDark: darken($_Primary, 10%);;
-$_Secondary: #03DAC6;
-$_SecondaryDark: #03c1af;
+$_PrimaryDark: darken($_Primary, 10%);
+$_Secondary: #14f5de;
+$_SecondaryDark: darken($_Secondary, 20%);
 $_Error: #CF6679;
 
 $_GreyScale1: #121212;
 $_GreyScale2: #23282c;
-$_GreyScale3: lighten($_GreyScale2, 10%); 
-$_GreyScale4: lighten($_GreyScale2, 20%); 
-$_GreyScale5: lighten($_GreyScale2, 30%); 
-$_GreyScale6: lighten($_GreyScale2, 50%); 
+$_GreyScale3: lighten($_GreyScale2, 6%); 
+$_GreyScale4: lighten($_GreyScale2, 12%); 
+$_GreyScale5: lighten($_GreyScale2, 20%); 
+$_GreyScale6: lighten($_GreyScale2, 32%); 
 $_GreyScale7: lighten($_GreyScale2, 60%); 
 $_GreyScale8: lighten($_GreyScale2, 80%); 
 
@@ -56,11 +56,14 @@ $darkTheme:(
         checkbox-border-disabled: $_GreyScale4,
         checkbox-check-disabled: $_GreyScale6,
 
-        card-background: $_GreyScale4,
+        card-background: $_GreyScale3,
 
         score-text: $_GreyScale7,
         score-bar: $_Primary,
-        score-wheel: $_GreyScale3,
+        score-wheel: $_GreyScale2,
         score-shadow: $_ScoreShadow,
+
+        pill: $_GreyScale4,
+        icon: $_Secondary,
     )
 );
