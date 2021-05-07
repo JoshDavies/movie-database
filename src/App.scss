@@ -60,6 +60,7 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: flex-end;
     margin-bottom: 2rem;
     @include theme-aware(box-shadow, 'container-shadow');
     @include theme-aware(background-color, 'container');
@@ -71,6 +72,14 @@ body {
     h1 {
       margin: auto;
       padding: 0rem 1rem;
+    }
+    .themeToggle {
+      display: inline-flex;
+      align-items: center;
+      margin: 1rem;
+      svg {
+        margin: 0.2rem 0.5rem;
+      }
     }
   }
 

@@ -1,35 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { observer } from "mobx-react";
-import Button from 'Components/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ToggleButton from 'Components/Toggle/Toggle';
+import ThemeStore from 'Components/PageLayout/ThemeStore';
 
 const Header = () => {
 
-  const toggleTheme = (): void => {
-    let currentTheme: string = document.documentElement.className;
-    document.documentElement.className = '';
-    if (currentTheme === 'theme-light') {
-      document.documentElement.classList.add(`theme-${'dark'}`);
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.add(`theme-${'light'}`);
-      localStorage.setItem('theme', 'light');
-    }
-  }
+  useEffect( () => {
+    ThemeStore.handleColorTheme();
+  }, [] );
 
   return (
     <header className='navBar' id ='navBar' role='banner'>
       <h1>Movie Database</h1>
-      <Button 
-        id={'toggleThemeButton'}
-        type={'button'}
-        onClick={()=> {toggleTheme()}}
-        children={
-          <span>
-            Change Theme <FontAwesomeIcon icon={'sun'} /> <FontAwesomeIcon icon={'moon'} />
-          </span>
-        }
+      <div className={'themeToggle'} title='change color theme'>
+      <FontAwesomeIcon icon={'sun'} />
+      <ToggleButton
+        id={'toggle-1'}
+        isActive={ThemeStore.isDarkTheme}
+        toggleActive={() => ThemeStore.toggleTheme()}
+        ariaLabel={'change color theme'}
       />
+      <FontAwesomeIcon icon={'moon'} />
+      </div>
     </header>
   )
 };
