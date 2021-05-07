@@ -8,24 +8,21 @@ class Store {
             isDarkTheme: computed,
             currentTheme: observable,
             toggleTheme: action,
+            setColorTheme: action,
         })
     }
 
     public get isDarkTheme(): boolean {
-        if (this.currentTheme === 'theme-light') return false; 
-        return true;
+        return this.currentTheme === 'theme-dark'; 
     }
 
     public toggleTheme():void {
-        document.documentElement.className = '';
         if (this.currentTheme === 'theme-light') {
-          document.documentElement.classList.add(`theme-${'dark'}`);
-          localStorage.setItem('theme', 'dark');
-          this.currentTheme = 'theme-dark'
+            localStorage.setItem('theme', 'dark');
+            this.setColorTheme('dark');
         } else {
-          document.documentElement.classList.add(`theme-${'light'}`);
-          localStorage.setItem('theme', 'light');
-          this.currentTheme = 'theme-light';
+            localStorage.setItem('theme', 'light');
+            this.setColorTheme('light');
         }
     }
 
@@ -42,6 +39,7 @@ class Store {
     public setColorTheme = (theme: string): void => {
         document.documentElement.className = '';
         document.documentElement.classList.add(`theme-${theme}`);
+        this.currentTheme = `theme-${theme}`
     };
     
 }
