@@ -18,7 +18,7 @@ const MovieCard = ({
 }: propTypes) => {
     return (
         <div className='movieCard' key={index + movie.title}>
-            <img src={`http://image.tmdb.org/t/p/w300/${movie.poster_path}`}></img>
+            <img src={`http://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="movie poster"></img>
 
             <div className='movieInfo'>
                 <h3>{movie.title}</h3>
