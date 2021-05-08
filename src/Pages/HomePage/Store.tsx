@@ -4,14 +4,17 @@ import * as Types from './Types';
 class Store {
     isChecked: boolean = false
     popularMovies: Types.PopularMovies = null
+    selectedMovie: null | Types.Movie = null
 
     constructor() {
         makeObservable(this, {
             isChecked: observable,
             popularMovies: observable,
+            selectedMovie: observable,
             toggle: action,
             fetchPopularMovies: action,
-            setPopularMovies: action
+            setPopularMovies: action,
+            selectMovie: action
         })
     }
 
@@ -39,6 +42,14 @@ class Store {
         }
     }
     
+    selectMovie = (movie: Types.Movie): void => {
+        this.selectedMovie = movie
+    }
+
+    closeModal = (): void => {
+        this.selectedMovie = null
+    }
+       
 }
 
 const store = new Store();

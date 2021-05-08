@@ -19,16 +19,21 @@ const HomePage = () => {
         <div className='movieCardList'>
           {Store.popularMovies && Store.popularMovies.length &&
             Store.popularMovies.map((movie, index) =>
-              <MovieCard index={index} movie={movie} />
+              <MovieCard 
+                index={index} 
+                movie={movie} 
+                selectMovie={Store.selectMovie}
+              />
             )
           }
         </div>
 
-        {Store.popularMovies && Store.popularMovies.length &&
+        {Store.selectedMovie &&
           <MovieModal
             id={'test'}
             isModalOpen={true}
-            movie={Store.popularMovies[0]}
+            movie={Store.selectedMovie}
+            closeModal={Store.closeModal}
           />
         }
       </div>

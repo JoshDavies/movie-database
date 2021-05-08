@@ -9,12 +9,14 @@ type propTypes = {
     id: string,
     isModalOpen: boolean,
     movie: Types.Movie,
+    closeModal: () => void,
 }
 
 const MovieModal = ({
     id,
     isModalOpen,
     movie,
+    closeModal,
 }: propTypes) => {
     return (
         <Modal id={`modal-${id}`} isOpen={isModalOpen} className={"modal-dialog-centered"}>
@@ -26,7 +28,7 @@ const MovieModal = ({
                     <Button 
                         id = {'closeModalButton'}
                         children = {'Back to Movies'}
-                        onClick = { () => null }
+                        onClick = { () => closeModal() }
                         type = {'button'}
                     /> 
                 </div>

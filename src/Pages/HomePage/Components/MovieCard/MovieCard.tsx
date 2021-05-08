@@ -10,11 +10,13 @@ import Button from 'Components/Button/Button';
 type propTypes = {
     index: number,
     movie: Types.Movie,
+    selectMovie: (movie: Types.Movie) => void,
 }
   
 const MovieCard = ({
     index,
-    movie
+    movie,
+    selectMovie,
 }: propTypes) => {
     return (
         <div className='movieCard' key={index + movie.title}>
@@ -35,7 +37,7 @@ const MovieCard = ({
                     <Button 
                         id={`overViewButton-${index}`}
                         type={'button'}
-                        onClick={()=> null}
+                        onClick={()=> selectMovie(movie)}
                         children={
                         <span>
                             <FontAwesomeIcon icon={'info-circle'} /> Overview
