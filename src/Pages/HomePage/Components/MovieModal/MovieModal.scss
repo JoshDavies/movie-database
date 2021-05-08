@@ -1,0 +1,19 @@
+@import 'src/themes/theme-builder';
+
+#movieModalBody {
+  padding: 2rem;
+  @include theme-aware(background-color, 'card-background');
+  @include theme-aware(box-shadow, 'container-shadow');
+  hr { 
+    border-top-style: solid;
+    border-top-width: 1px;
+    @include theme-aware(border-color, 'text');
+  }
+  h2, p { 
+    @include theme-aware(color, 'text');
+  }
+  .modalButton {
+    text-align: right;
+    display: block;
+  }
+}

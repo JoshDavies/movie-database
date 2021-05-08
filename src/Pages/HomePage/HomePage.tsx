@@ -4,6 +4,7 @@ import './HomePage.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Store from 'Pages/HomePage/Store';
 import MovieCard from './Components/MovieCard/MovieCard';
+import MovieModal from './Components/MovieModal/MovieModal';
 
 const HomePage = () => {
 
@@ -22,6 +23,14 @@ const HomePage = () => {
             )
           }
         </div>
+
+        {Store.popularMovies && Store.popularMovies.length &&
+          <MovieModal
+            id={'test'}
+            isModalOpen={true}
+            movie={Store.popularMovies[0]}
+          />
+        }
       </div>
     </div>
   )

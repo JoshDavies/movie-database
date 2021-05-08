@@ -27,8 +27,8 @@ class Store {
     }
 
     public handleColorTheme = (): void => {  
-        const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
-        const localStorageTheme = localStorage.getItem("theme");
+        let prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        let localStorageTheme = localStorage.getItem("theme");
         if (localStorageTheme) {
             localStorageTheme === "dark" ? this.setColorTheme('dark') : this.setColorTheme('light');
         } else {
