@@ -5,6 +5,7 @@ import './MovieModal.scss';
 import Button from "Components/Button/Button";
 import UserScoreBar from '../userScoreBar/UserScoreBar';
 import * as Types from 'Pages/HomePage/Types';
+import ReleaseDate from '../ReleaseDate/ReleaseDate';
 
 type propTypes = {
     id: string,
@@ -27,6 +28,7 @@ const MovieModal = ({
                 <hr />
                 <p>{movie.overview}</p>
                 <UserScoreBar userScore={movie.vote_average}/>
+                <ReleaseDate date={movie.release_date} />
                 <div className="modalButton">
                     <Button 
                         id = {'closeModalButton'}
