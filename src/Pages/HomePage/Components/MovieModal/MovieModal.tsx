@@ -23,19 +23,24 @@ const MovieModal = ({
     return (
         <Modal id={`modal-${id}`} isOpen={isModalOpen} className={"modal-dialog-centered"}>
             <ModalBody id="movieModalBody">
-                <img src={`http://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="movie poster"></img>
-                <h2>{movie.title}</h2>
-                <hr />
-                <p>{movie.overview}</p>
-                <UserScoreBar userScore={movie.vote_average}/>
-                <ReleaseDate date={movie.release_date} />
-                <div className="modalButton">
-                    <Button 
-                        id = {'closeModalButton'}
-                        children = {'Back to Movies'}
-                        onClick = { () => closeModal() }
-                        type = {'button'}
-                    /> 
+                <div className={'firstColumn'}>
+                    <img src={`http://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="movie poster"></img>
+                    <ReleaseDate date={movie.release_date} />
+                </div>
+                <div className={'secondColumn'}>
+                    <h2>{movie.title}</h2>
+                    <hr />
+                    <p>{movie.overview}</p>
+                    <UserScoreBar userScore={movie.vote_average}/>
+                    <p>{movie.vote_count} votes</p>
+                    <div className="modalButton">
+                        <Button 
+                            id = {'closeModalButton'}
+                            children = {'Back to Movies'}
+                            onClick = { () => closeModal() }
+                            type = {'button'}
+                        /> 
+                    </div>
                 </div>
             </ModalBody>
         </Modal>

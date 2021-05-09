@@ -4,6 +4,7 @@
 	width: 5rem;
 	height: 5rem;
 	margin-right: 0.5rem;
+	margin-bottom: 1rem;
 	font-size: 1.2rem;
 	@include theme-aware(filter, 'score-shadow');
 	.CircularProgressbar {

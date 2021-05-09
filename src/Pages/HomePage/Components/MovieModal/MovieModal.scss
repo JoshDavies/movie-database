@@ -1,6 +1,17 @@
 @import 'src/themes/theme-builder';
 
+.modal .modal-dialog-centered {
+  @media (min-width: 576px) {
+    max-width: 80vh;
+  }
+}
+
 #movieModalBody {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
   padding: 2rem;
   @include theme-aware(background-color, 'card-background');
   @include theme-aware(box-shadow, 'container-shadow');
@@ -12,8 +23,16 @@
   h2, p { 
     @include theme-aware(color, 'text');
   }
+  img {
+    width: 300px;
+    border-radius: 0.2rem 0.2rem 0rem 0rem;
+  }
   .modalButton {
     text-align: right;
     display: block;
+  }
+  .secondColumn {
+    padding: 1.5rem;
+    max-width: auto;
   }
 }
