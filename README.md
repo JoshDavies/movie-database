@@ -33,14 +33,18 @@ To Launch the app locally:
 > npm start
 ```
 ### API Key
-First, you will need to claim a free API from [The Movie Database](https://developers.themoviedb.org/3/getting-started/introduction) in order to populate the app.  
+To populate the app, you will first need to claim a free API from [The Movie Database](https://developers.themoviedb.org/3/getting-started/introduction).  
 Once you have your unique key, create a ```.env``` file at the top level of the project. 
-the key must be named ```REACT_APP_API_KEY=```  
-- I have listed this file to be ignored by git to avoid it being uploaded to GitHub. Secret keys should not be stored on GitHub.    
-- Please be aware when deploying a front end app that the key will still be visable in the build files and in the console network tab when deployed. There is no way to securely store a secret API key in the frontend. 
+the key must be assigned to ```REACT_APP_API_KEY=```  
+- I have listed this file to be ignored by git to avoid it being uploaded to GitHub. Secret keys should not be stored on GitHub (even private repositories).    
+- Please be aware when deploying a front end app that the key will still be visible in the build files and in the console network tab when deployed. There is no way to securely store a secret API key in the frontend. 
 
 -----------
 ## Project Review  
-
-TBC
-
+I found the MobX syntax changes easy to adjust to and built stores to keep the JS logic separate from the React code (separation of concerns).  
+   
+I used 2 third-party component libraries, adding custom styling to fit the layout and theme of the app.  
+Using a library speeds up development and the components are well tested by the community. However, it increases the project's dependencies and footprint. It can also be difficult to customize or add features to them. I prefer creating my own components to ensure compatibility, code visibility and customization, however, for complex graphs, it preserves sprint productivity.  
+  
+- talk about using the API
+- talk about how the project could be developed further.
