@@ -19,7 +19,7 @@ const MovieCard = ({
     selectMovie,
 }: propTypes) => {
     return (
-        <div className='movieCard' key={index + movie.title}>
+        <div className='movieCard' key={`card-${index}`}>
             <img src={`http://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="movie poster"></img>
             <div className='movieInfo'>
                 <h3>{movie.title}</h3>

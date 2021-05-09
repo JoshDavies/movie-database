@@ -23,6 +23,7 @@ const HomePage = () => {
                 index={index} 
                 movie={movie} 
                 selectMovie={Store.selectMovie}
+                key={`card-${index}`}
               />
             )
           }

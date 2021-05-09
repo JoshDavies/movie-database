@@ -36,7 +36,6 @@ class Store {
             console.log(response.status_message)
         } else {
             if (response.results) {
-                console.log(response.results)
                 this.popularMovies = response.results as Types.PopularMovies
             }
         }
