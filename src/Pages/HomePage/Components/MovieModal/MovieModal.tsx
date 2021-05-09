@@ -22,6 +22,7 @@ const MovieModal = ({
     return (
         <Modal id={`modal-${id}`} isOpen={isModalOpen} className={"modal-dialog-centered"}>
             <ModalBody id="movieModalBody">
+                <img src={`http://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="movie poster"></img>
                 <h2>{movie.title}</h2>
                 <hr />
                 <p>{movie.overview}</p>
