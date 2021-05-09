@@ -1,0 +1,18 @@
+@import 'src/themes/theme-builder';
+
+.userScoreBar {
+	width: 5rem;
+	height: 5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+	@include theme-aware(filter, 'score-shadow');
+	.CircularProgressbar {
+		@include theme-aware(stroke, 'score-text');
+		.CircularProgressbar-path {
+			@include theme-aware(stroke, 'score-bar');
+		}
+		.CircularProgressbar-trail {
+			@include theme-aware(stroke, 'score-wheel');
+		}
+	}
+} 
