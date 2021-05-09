@@ -20,6 +20,9 @@
 			margin-top: .5rem;
 			margin-bottom: 11rem;
 		}
+		button p {
+			margin-bottom: 0;
+		}
 		.scoreAndRelease {
 			position: absolute;
 			bottom: 1.5rem;
@@ -32,17 +35,5 @@
 		.movieRelease, .userScoreBar {
 			display: inline-block;
 		} 
-		.movieRelease {
-			font-size: 1.2rem;
-			margin-top: 1rem;
-			margin-bottom: 0;
-			padding: 0.5rem 1rem;
-			width: inherit;
-			@include theme-aware(background-color, 'date-banner');
-			@include theme-aware(box-shadow, 'container-shadow');
-			svg {
-				@include theme-aware(color, 'icon');
-			}
-		}
 	}	
 }
