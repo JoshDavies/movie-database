@@ -14,7 +14,7 @@ class Store {
             toggle: action,
             fetchPopularMovies: action,
             setPopularMovies: action,
-            selectMovie: action
+            setMovie: action
         })
     }
 
@@ -41,7 +41,7 @@ class Store {
         }
     }
     
-    selectMovie = (movie: Types.Movie): void => {
+    setMovie = (movie: Types.Movie): void => {
         this.selectedMovie = movie
     }
 

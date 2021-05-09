@@ -22,7 +22,7 @@ const HomePage = () => {
               <MovieCard 
                 index={index} 
                 movie={movie} 
-                selectMovie={Store.selectMovie}
+                selectMovie={Store.setMovie}
                 key={`card-${index}`}
               />
             )
