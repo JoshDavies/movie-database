@@ -21,6 +21,7 @@ To give the app interesting content and to demo fetching from an API, I'm using 
 - Font Awesome 5 icon library    
 - MobX 6   
 - [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar)  
+- [reactstrap Modal](https://reactstrap.github.io/components/modals/)  
 
 ----------------
 ## Quickstart
@@ -33,7 +34,13 @@ To Launch the app locally:
 > npm run build
 > npm start
 ```
-  
+### API Key
+you will need to claim an API from [the Movie Database's free API](https://developers.themoviedb.org/3/getting-started/introduction)   
+Once you have your unique key, create a ```.env``` file at the top level of the project. 
+the key must be named ```REACT_APP_API_KEY=```  
+I have listed this file to be ignored by git to avoid it being uploaded to GitHub.  
+Please be aware that the key will still be visable in the build files and in the console network tab when deployed. There is no way to securely store a secret API key in the frontend. 
+
 -----------
 ## Project Review  
 
