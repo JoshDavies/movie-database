@@ -12,12 +12,12 @@ The MobX library has been added to the project to handle state management. I hav
   
 ----------------
 ## Tech  
-- JS / TypeScript  
 - React  
+- MobX   
+- JS / TypeScript  
 - SCSS + Bootstrap  
 - Google Fonts  
 - Font Awesome 5 icon library    
-- MobX 6   
 - [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar)  
 - [reactstrap Modal](https://reactstrap.github.io/components/modals/)  
 
