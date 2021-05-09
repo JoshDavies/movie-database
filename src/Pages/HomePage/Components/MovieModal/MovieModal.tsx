@@ -3,6 +3,7 @@ import {observer} from 'mobx-react';
 import {Modal, ModalBody} from "reactstrap";
 import './MovieModal.scss';
 import Button from "Components/Button/Button";
+import UserScoreBar from '../userScoreBar/UserScoreBar';
 import * as Types from 'Pages/HomePage/Types';
 
 type propTypes = {
@@ -24,6 +25,7 @@ const MovieModal = ({
                 <h2>{movie.title}</h2>
                 <hr />
                 <p>{movie.overview}</p>
+                <UserScoreBar userScore={movie.vote_average}/>
                 <div className="modalButton">
                     <Button 
                         id = {'closeModalButton'}
