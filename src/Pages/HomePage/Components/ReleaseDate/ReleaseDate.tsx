@@ -11,8 +11,8 @@ const ReleaseDate = ({
     date,
 }: propTypes) => {
     return (
-        <p className='movieRelease'> 
-            <FontAwesomeIcon icon={['far', 'calendar-alt']} title='Release Date' aria-label='Release Date' />
+        <p className='movieRelease' title='Release Date'> 
+            <FontAwesomeIcon icon={['far', 'calendar-alt']} aria-label='Release Date' />
             {date}
         </p>
     )
