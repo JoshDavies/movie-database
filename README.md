@@ -35,11 +35,11 @@ To Launch the app locally:
 > npm start
 ```
 ### API Key
-you will need to claim an API from [the Movie Database's free API](https://developers.themoviedb.org/3/getting-started/introduction)   
+First, you will need to claim a free API from [The Movie Database](https://developers.themoviedb.org/3/getting-started/introduction)   
 Once you have your unique key, create a ```.env``` file at the top level of the project. 
 the key must be named ```REACT_APP_API_KEY=```  
-I have listed this file to be ignored by git to avoid it being uploaded to GitHub.  
-Please be aware that the key will still be visable in the build files and in the console network tab when deployed. There is no way to securely store a secret API key in the frontend. 
+- I have listed this file to be ignored by git to avoid it being uploaded to GitHub. Secret keys should not be stored on GitHub.    
+- Please be aware when deploying a front end app that the key will still be visable in the build files and in the console network tab when deployed. There is no way to securely store a secret API key in the frontend. 
 
 -----------
 ## Project Review  
