@@ -10,8 +10,8 @@ The MobX library has been added to the project to handle state management. I hav
    
 ## Project Objectives:   
 - Learn new syntax for MobX 6.  
-- Fetch data from [the Movie Database's free API](https://developers.themoviedb.org/3/getting-started/introduction)
-  
+- Fetch and display data from [the Movie Database's free API](https://developers.themoviedb.org/3/getting-started/introduction)  
+- Build reusable React components to keep the code DRY.    
 ----------------
 ## Tech  
 - React  
