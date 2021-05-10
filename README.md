@@ -12,12 +12,12 @@ The MobX library has been added to the project to handle state management. I hav
   
 ----------------
 ## Tech  
-- JS / TypeScript  
 - React  
+- MobX   
+- JS / TypeScript  
 - SCSS + Bootstrap  
 - Google Fonts  
 - Font Awesome 5 icon library    
-- MobX 6   
 - [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar)  
 - [reactstrap Modal](https://reactstrap.github.io/components/modals/)  
 
@@ -37,14 +37,17 @@ To populate the app, you will first need to claim a free API from [The Movie Dat
 Once you have your unique key, create a ```.env``` file at the top level of the project. 
 the key must be assigned to ```REACT_APP_API_KEY=```  
 - I have listed this file to be ignored by git to avoid it being uploaded to GitHub. Secret keys should not be stored on GitHub (even private repositories).    
-- Please be aware when deploying a front end app that the key will still be visible in the build files and in the console network tab when deployed. There is no way to securely store a secret API key in the frontend. 
+- Please be aware when deploying a front end app that the key will still be visible in the build files and in the console network tab when deployed. There is no way to securely store a secret API key in the frontend.  
 
 -----------
 ## Project Review  
-I found the MobX syntax changes easy to adjust to and built stores to keep the JS logic separate from the React code (separation of concerns).  
+I found the MobX syntax changes easy to adjust to and built stores to keep the JS logic separate from the React code (separation of concerns). It was great working with The Movie DB's APIs as they are well documented and the JSON keys are descriptive so it was easy to pick up. Although, keeping my unique API key secure means I can't simply deploy the app to GitHub Pages. I will have to do further research or look at deploying on Heroku.  
    
 I used 2 third-party component libraries, adding custom styling to fit the layout and theme of the app.  
 Using a library speeds up development and the components are well tested by the community. However, it increases the project's dependencies and footprint. It can also be difficult to customize or add features to them. I prefer creating my own components to ensure compatibility, code visibility and customization, however, for complex graphs, it preserves sprint productivity.  
   
-- talk about using the API
-- talk about how the project could be developed further.
+### Ideas to develop the project further  
+- The Movie DB has more API's I could add e.g. newest releases or movie search functionality.  
+- Add a favourits / watch list that users can add or remove films to.
+- Currently, a failure with the API is logged to the console. Instead build an Error modal for better user experience.  
+- Build a loading wire frame to display if the user has slow network speeds.  
