@@ -45,8 +45,7 @@ the key must be assigned to ```REACT_APP_API_KEY=```
 ## Project Review  
 I found the MobX syntax changes easy to adjust to and built stores to keep the JS logic separate from the React code (separation of concerns). It was great working with The Movie DB's APIs as they are well documented and the JSON keys are descriptive so it was easy to pick up. Although, keeping my unique API key secure means I can't simply deploy the app to GitHub Pages. I will have to do further research or look at deploying on Heroku.  
    
-I used 2 third-party component libraries, adding custom styling to fit the layout and theme of the app.  
-Using a library speeds up development and the components are well tested by the community. However, it increases the project's dependencies and footprint. It can also be difficult to customize or add features to them. I prefer creating my own components to ensure compatibility, code visibility and customization, however, for complex graphs, it preserves sprint productivity.  
+I used 2 third-party component libraries, adding custom styling to fit the layout and theme of the app. Using a library can speed up development and the components are well tested by the community. However, it increases the project's dependencies and footprint. It can also be difficult to customize or add features to them. I prefer creating my own components to ensure compatibility, code visibility and customization. However, for complex graphs, it helps maintian sprint productivity.  
   
 ### Ideas to develop the project further  
 - The Movie DB has more API's I could add e.g. newest releases or movie search functionality.  
