@@ -52,4 +52,4 @@ Using a library speeds up development and the components are well tested by the 
 - Currently, a failure with the API is logged to the console. Instead build an Error modal for better user experience.  
 - Build a loading wire frame to display if the user has slow network speeds.  
   
-<img align="left" width="800" height="auto" src="https://media.giphy.com/media/lg5L4JEXmC67J6VhBr/giphy.gif">  
+<img align="left" width="400" height="auto" src="https://media.giphy.com/media/lg5L4JEXmC67J6VhBr/giphy.gif">  
