@@ -1,8 +1,8 @@
 # Movie Database
 
-A Font End React App with MobX, TypeScript and SCSS. To give the app interesting content and to demo fetching from an API, I'm using a third party API from [The Move Database](https://www.themoviedb.org/).  
+A Font End React App with MobX, TypeScript and SCSS. To give the app interesting content and to demo fetching from an API, I'm using a third party API from [The Move Database](https://www.themoviedb.org/). The App also supports both light and dark themes.  
   
-<img align="center" width="480" height="270" src="https://media.giphy.com/media/lg5L4JEXmC67J6VhBr/giphy.gif">  
+<img width="480" height="270" src="https://media.giphy.com/media/lg5L4JEXmC67J6VhBr/giphy.gif">  
   
 This project was cloned from my previous project: [Theme-builder](https://github.com/JoshDavies/theme-builder) in order to continue working on it but to take it in a new direction and shift focus to fetch and displaying content from an API.
 
@@ -53,4 +53,3 @@ Using a library speeds up development and the components are well tested by the 
 - Add a favourits / watch list that users can add or remove films to.
 - Currently, a failure with the API is logged to the console. Instead build an Error modal for better user experience.  
 - Build a loading wire frame to display if the user has slow network speeds.  
-  
