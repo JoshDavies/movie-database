@@ -17,7 +17,7 @@ const HomePage = () => {
       <div className='container' >
         <h2><FontAwesomeIcon icon={'fire'} /> Popular</h2>
         <div className='movieCardList'>
-          {Store.popularMovies && Store.popularMovies.length &&
+          {Store.popularMovies && Store.popularMovies.length > 0 &&
             Store.popularMovies.map((movie, index) =>
               <MovieCard 
                 index={index} 
